@@ -90,7 +90,7 @@ const ResponseList = () => {
     <div className="space-y-3">
       <div className="flex items-center justify-between space-x-4">
         <p className="whitespace-nowrap">
-          Select a type for response of feedback: {totalPages}
+          Select a type for response of feedback:
         </p>
         <Select onValueChange={(value) => setSelectedType(value)}>
           <SelectTrigger className="grow">

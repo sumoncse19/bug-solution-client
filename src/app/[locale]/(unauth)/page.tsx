@@ -113,7 +113,7 @@ const Index = () => {
   return (
     <section className="flex min-h-screen items-center justify-center">
       <div className="my-10 w-[90vw] space-y-4 rounded-lg border bg-white p-4 shadow-xl 3xl:w-1/2">
-        <h1 className="text-center text-2xl">This is from home page</h1>
+        <h1 className="text-center text-2xl">Find your solution with AI 👨‍🚀</h1>
         <Tabs
           defaultValue="submit-feedback"
           className="min-h-[600px] w-full space-y-6"
