@@ -113,8 +113,8 @@ const Index = () => {
   };
 
   return (
-    <section className="flex h-screen items-center justify-center">
-      <div className="w-[90vw] space-y-4 rounded-lg border bg-white p-4 shadow-xl 3xl:w-1/2">
+    <section className="flex min-h-screen items-center justify-center">
+      <div className="my-10 w-[90vw] space-y-4 rounded-lg border bg-white p-4 shadow-xl 3xl:w-1/2">
         <h1 className="text-center text-2xl">This is from home page</h1>
         <Tabs defaultValue="submit-feedback" className="w-full space-y-6">
           <TabsList className="h-10 w-full">
@@ -157,7 +157,7 @@ const Index = () => {
                     if (error) setError("");
                   }}
                   placeholder="Enter your prompt"
-                  className={`${selectedType === "bug" ? "h-[600px]" : "h-[300px]"} w-full rounded-md border ${error ? "border-red-500" : ""} p-2 outline-none`}
+                  className={`${selectedType === "bug" ? "h-[400px]" : "h-[300px]"} w-full rounded-md border ${error ? "border-red-500" : ""} p-2 outline-none`}
                 />
                 {error && <p className="mt-1 text-sm text-red-500">{error}</p>}
               </div>
@@ -165,14 +165,14 @@ const Index = () => {
               {selectedType === "bug" && (
                 <div>
                   <Label htmlFor="picture">Upload your picture</Label>
-                  <div className="flex h-[600px] w-full flex-col justify-between space-y-4 rounded-md border p-2">
-                    <div className="mt-4 grow">
+                  <div className="flex h-[400px] w-full flex-col justify-between space-y-4 rounded-md border p-2">
+                    <div className="h-auto max-h-[calc(100%-80px)] grow">
                       {imagePreview && (
                         <Image
                           src={imagePreview}
                           alt="Preview"
-                          width="400"
-                          height="500"
+                          width="100"
+                          height="100"
                           className="size-full rounded-md object-contain"
                         />
                       )}
