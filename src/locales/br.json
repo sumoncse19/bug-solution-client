@@ -1,0 +1,440 @@
+{
+  "RootLayout": {
+    "home_link": "Início",
+    "service_link": "Serviços",
+    "service_menu": [
+      {
+        "title": "Sessões individuais",
+        "sub_menu": [
+          {
+            "title": "Consultas psicológicas e psicoenergéticas"
+          },
+          {
+            "title": "Hipnoterapia"
+          },
+          {
+            "title": "Mindfulness"
+          }
+        ]
+      },
+      {
+        "title": "Workshops",
+        "sub_menu": [
+          {
+            "title": "Meditações"
+          },
+          {
+            "title": "Abordagens energéticas"
+          },
+          {
+            "title": "Técnicas de respiração"
+          }
+        ]
+      },
+      {
+        "title": "Viagens",
+        "sub_menu": [
+          {
+            "title": "Relaxamento"
+          },
+          {
+            "title": "Dietetica"
+          }
+        ]
+      },
+      {
+        "title": "Comunidade"
+      }
+    ],
+    "about_ascent_u_link": "Sobre o Ascent-U",
+    "course_link": "Cursos",
+    "our_offer": "Nossa oferta",
+    "about_link": "Sobre mim",
+    "blog_link": "Blogue",
+    "contact_link": "Contate-us",
+    "find_masters": "Encontre Mestres",
+    "guestbook_link": "Livro de visitas",
+    "portfolio_link": "Portfólio",
+    "sign_in_link": "Entrar",
+    "sign_out": "Sair",
+    "sign_up": "Cadastrar-se",
+    "load_more": "Carregar mais",
+    "terms_conditions": "Termos e Condições",
+    "privacy_policy": "Política de Privacidade"
+  },
+  "BaseTemplate": {
+    "description": "Código inicial para seu Boilerplate Nextjs com Tailwind CSS",
+    "made_with": "Feito com"
+  },
+  "Index": {
+    "meta_title": "Ascent-U",
+    "meta_description": "O Boilerplate Next js é o código inicial perfeito para o seu projeto. Construa sua aplicação React com o framework Next.js."
+  },
+  "OurOffers": {
+    "all_services": "Todos os serviços",
+    "services_by_body": "Serviços por órgão",
+    "mental_body": "Corpo mental",
+    "emotional_body": "Corpo emocional",
+    "spiritiual_body": "Corpo espiritual",
+    "physical_body": "Corpo físico",
+    "all_categories": "Todas as categorias",
+    "individual_sessions": "Sessões individuais",
+    "group_sessions": "Sessões de grupo",
+    "personal_development": "Desenvolvimento pessoal",
+    "all_webinars": "Todos os webinários",
+    "all_sessions": "Todas as sessões",
+    "webinars": "Seminários on-line",
+    "psychological_and_psycho_energetic_consultations": "Consultas psicológicas e psicoenergéticas",
+    "spiritual_development": "Desenvolvimento espiritual",
+    "eft_emdr": "EFT, EMDR",
+    "meditations_mindfulness": "Meditações, atenção plena",
+    "hypnotherapy": "Hipnoterapia",
+    "relaxation": "Relaxamento",
+    "energy_treatments": "Tratamentos energéticos",
+    "alternative_therapies": "Terapias alternativas",
+    "yoga_breathing_techniques": "Yoga, técnicas de respiração",
+    "tai_chu_chi_qi_gong": "Tai Chu Chi, Qi Gong",
+    "nutrition_dietetics": "Nutrição, dietética",
+    "physical_exercises": "Exercícios físicos",
+    "workshops": "Oficinas",
+    "all_workshops": "Todos os workshops",
+    "psychological_and_psycho_energetic": "Psicológico e psicoenergético",
+    "spiritual_development": "Desenvolvimento espiritual",
+    "mindfulness_meditation": "Atenção plena, meditação",
+    "hypnosis_relaxation": "Hipnose, relaxamento",
+    "alternative_therapies": "Terapias alternativas",
+    "energy_treatments": "Tratamentos energéticos",
+    "yoga_breathing_techniques": "Yoga, técnicas de respiração",
+    "nutrition_dietetics": "Nutrição, dietética",
+    "trips_to_u": "Viagens para U",
+    "relaxation": "Relaxamento",
+    "dietetics": "Dietética"
+  },
+  "Home": {
+    "title_1": "Todos os dias fazemos a escolha",
+    "title_2": "entre o medo e o amor",
+    "all_right": "Todos os direitos reservados",
+    "sub_title": "Transforme sua vida com nossa abordagem holística, psicoenergética",
+    "workshops": "Workshops",
+    "sessions": "Sessões",
+    "travels": "Viagens",
+    "our_mission": "Nossa missão é ajudar a melhorar a saúde mental e o bem-estar, e promover o desenvolvimento pessoal e espiritual de forma ampla. Oferecemos uma abordagem <strong>holística e psicoenergética</strong> para indivíduos, a fim de ajudá-los a curar seu passado e desbloquear seu potencial interior. Nos esforçamos para acompanhá-los em seu caminho da vergonha, culpa, raiva e medo rumo à alegria e à paz interior, através da aceitação, perdão e amor. Acreditamos que a pessoa deve ser vista como um todo, com todos os seus corpos: físico, mental, emocional e espiritual. Não podemos curar e cuidar de um corpo enquanto negligenciamos os outros. Acreditamos na importância da energia e combinamos <strong>psicologia clássica e psicoterapia com o trabalho energético.</strong> Também promovemos <strong>atividade física</strong> e o contato com <strong>a natureza.</strong>",
+    "we_believe": "",
+    "we_create": "Por isso, criamos uma plataforma que oferece fácil acesso a especialistas de diversas áreas: psicólogos energéticos, trabalhadores energéticos, hipnoterapeutas, professores de meditação e yoga, praticantes de mindfulness, EFT e respiração, nutricionistas, entre outros.",
+    "our_trips": "Nossas <strong>Viagens para U</strong> (que incluem workshops e trekking na natureza), <strong>workshops</strong> e <strong>sessões individuais</strong> ou <strong>em grupo</strong>, darão a você a oportunidade de curar o passado, trabalhar sua mentalidade, seus pensamentos, seu sistema de crenças e suas emoções.",
+    "you_learn": "Você aprenderá a se amar e se aceitar e depois aos outros, viver no momento presente, desbloquear e equilibrar o fluxo de energia em seu corpo, expandir sua consciência. Você aprenderá a moldar e programar sua vida para ser do jeito que você deseja e ser acompanhado por bem-estar, paixão, sucesso, alegria e paz interior. <strong>Nossa missão é ajudá-lo a aprender a escolher o amor ao invés do medo... o amor que torna tudo isso possível.</strong>",
+    "workshop_slider": {
+      "workshop_slider_title": "Oficinas",
+      "meet_our_specialist": "Conheça nossos especialistas",
+      "discover_workshops": "Descubra todos os workshops",
+      "discover_all": "Descubra tudo",
+      "heading": "Adquira novas habilidades e melhore seu bem-estar",
+      "workshop_description": "Descubra nossos workshops e webinars desenvolvidos especialmente para ajudar você a adquirir conhecimento sobre cada um dos seus corpos: físico, mental, emocional e espiritual, além de habilidades para ajudá-los a funcionar bem e permanecerem em equilíbrio. Nossos workshops são conduzidos por profissionais apaixonados, prontos para guiar você no seu caminho de desenvolvimento, compartilhar seus conhecimentos, oferecer conselhos personalizados e ajudá-lo a alcançar seus objetivos.",
+      "new_skills": "Novas habilidades",
+      "new_skills_description": "Aprenda novas ferramentas e adquira habilidades para melhorar seu bem-estar, cuidar do seu corpo físico e se autorregular emocional e energeticamente. Aprenda a alcançar seus objetivos com facilidade e a criar uma vida nova e melhor.",
+      "personal_growth": "Crescimento pessoal e espiritual",
+      "personal_growth_description": "Aprenda a se entender melhor, a mudar crenças limitantes e a forma como você enxerga a si mesmo, os outros e o mundo ao seu redor. Libere seu potencial interno e eleve seus níveis de energia e consciência.",
+      "better_quality": "Melhor qualidade de vida",
+      "better_quality_description": "Melhore a qualidade da sua vida e seu bem-estar com novas habilidades e conhecimentos que ajudam a manter o bom funcionamento dos seus quatro corpos. Encontre equilíbrio interno, alegria e serenidade."
+    },
+    "session_slider": {
+      "session_slider_title": "Sessões",
+      "heading": "Cuide da sua saúde mental e do seu bem-estar",
+      "session_description": "Nossas sessões individuais e em grupo foram criadas especialmente para apoiar sua saúde mental, ajudá-lo a se conhecer melhor, encontrar equilíbrio emocional e energético, expandir sua consciência e cuidar do seu corpo e saúde física. Entre em contato com nossos especialistas, que estão prontos para trabalhar com você.",
+      "mental_health": "Saúde mental",
+      "mental_health_description": "Se você precisa trabalhar em uma questão específica, como: baixa autoestima, problemas de relacionamento, insônia, esgotamento, gerenciamento de estresse ou raiva, transtornos de ansiedade, depressão, distúrbios alimentares, traumas de infância....",
+      "personal_development": "Desenvolvimento pessoal e espiritual",
+      "personal_development_description": "Se você deseja se entender melhor e descobrir o que está bloqueando seu crescimento; se deseja elevar seu nível de consciência e se conectar com seu Eu Autêntico para liberar seu potencial interno e se tornar quem você quer ser.",
+      "well_bing": "Bem-estar",
+      "well_bing_description": "Se você deseja melhorar sua saúde e bem-estar por meio de atividade física, uma dieta saudável, tratamentos energéticos, terapias alternativas, além de manter um fluxo energético equilibrado em seu corpo e cuidar do seu equilíbrio emocional."
+    },
+    "trips-to-u_slider": {
+      "trips_to-u_slider_title": "Viagens para Você",
+      "heading": "Faça uma jornada dentro de si e uma jornada pelo Universo",
+      "trips-to-u_description": "Convidamos você para uma verdadeira jornada a lugares lindos na natureza e uma jornada interior: para se encontrar no momento presente, trabalhar com suas crenças, sua própria energia e expandir sua consciência. Nossa abordagem holística oferece a melhor maneira de curar seu eu interior, promover seu crescimento pessoal e espiritual e melhorar seu bem-estar. Faça uma Viagem para Você!",
+      "work_beliefs": "Trabalhar com crenças",
+      "work_beliefs_description": "Trabalhe com crenças e convicções que limitam você e bloqueiam seu crescimento. Aprenda uma nova maneira de perceber a si mesmo, os outros e o mundo ao seu redor. Aprenda que você merece tudo de melhor.",
+      "expanding_consciousness": "Expansão da consciência",
+      "expanding_consciousness_description": "Pratique atenção plena, meditação e trabalho energético, aprenda a viver no momento presente, a acalmar sua mente e a criar uma ligação entre mente e coração para se conectar com seu Eu Autêntico e criar a vida que você deseja.",
+      "trekking_nature": "Caminhadas na natureza",
+      "trekking_nature_description": "Mergulhe na natureza praticando a atenção plena em movimento e sinta os efeitos benéficos da atividade física na sua saúde física e mental. Sinta as energias maravilhosas da natureza!"
+    },
+    "enhance_your_well_being": {
+      "enhance_well_being": "Melhore seu bem-estar e",
+      "boost_energy": "Aumente sua energia",
+      "enhance_description_1": "Descubra nossos workshops projetados para trazer-lhe bem-",
+      "enhance_description_2": "estar e crescimento pessoal, seja online ou presencialmente.",
+      "enhance_description_3": "Nossas sessões são conduzidas por profissionais apaixonados prontos",
+      "enhance_description_4": "para guiá-lo em sua jornada de desenvolvimento pessoal",
+      "enhance_description_5": "e aumento da energia positiva.",
+      "on_site": "Presencial",
+      "online": "Online",
+      "overall_well_being": "Bem-estar geral",
+      "overall_well_being_details": "Nossos workshops são especificamente projetados para ajudá-lo a encontrar equilíbrio mental e físico, melhorar sua qualidade de vida e fortalecer seu bem-estar diário.",
+      "inspiring_encounters": "Encontros inspiradores",
+      "inspiring_encounters_details": "Conheça especialistas e entusiastas que compartilharão seus conhecimentos e práticas com você para um bem-estar duradouro.",
+      "personal_growth": "Crescimento pessoal",
+      "personal_growth_details": "Aprenda a entender melhor a si mesmo, desenvolva suas habilidades pessoais e aumente sua energia através de exercícios práticos e conselhos personalizados."
+    },
+    "our_four_body": {
+      "title": "Temos 4 corpos",
+      "physical_body": "Corpo físico",
+      "mental_body": "Corpo mental",
+      "emotional_body": "Corpo emocional",
+      "spiritual_body": "Corpo espiritual",
+      "four_body_details_line_1": "O estado deles é muito importante, pois nossa saúde física e mental depende disso.",
+      "four_body_details_line_2": "Os quatro corpos estão conectados e",
+      "four_body_details_line_3": "são interdependentes.",
+      "four_body_slider_line_1": "O que podemos fazer",
+      "four_body_slider_line_2": "para garantir o bom funcionamento",
+      "four_body_slider_line_3": "e o equilíbrio dos nossos quatro corpos?"
+    },
+    "Our_community": {
+      "community_button_text": "Nossa Comunidade",
+      "sign_up_for_free": "Cadastre-se gratuitamente",
+      "community_description1": "para acessar nossas ofertas especiais para membros e informações sobre nossos novos workshops,",
+      "community_description2": "sessões e viagens!",
+      "join_now_btn": "Junte-se agora"
+    },
+    "Partnership": {
+      "partnership_btn_text": "Parceria",
+      "look_forward_to_working": "Estamos ansiosos para trabalhar com você!",
+      "list_1": "Se a missão e os valores da Ascent-U tocam o seu coração.",
+      "list_2": "Se você é psicólogo, psicoterapeuta, que combina abordagens e técnicas psicoterapêuticas clássicas com técnicas psicoenergéticas e trabalho energético, se pratica alguma forma de terapia energética, meditação, terapia alternativa, se é professor de yoga, nutricionista ou pratica outro tipo de terapia ou atividade relacionada à estimulação e harmonização da energia no corpo...",
+      "list_3": "Se você gostaria de se juntar a nós para promover o seu negócio e alcançar um público mais amplo.",
+      "contact_us_btn": "Entre em contato conosco"
+    },
+    "testimonial": {
+      "title": "Depoimentos",
+      "heading_1": "Vamos ver o que os outros dizem sobre",
+      "heading_2": "Ascent-U",
+      "user1_name": "Anderson David",
+      "user2_name": "Anderson David",
+      "user1_comment": "Eu frequento os workshops da Marta desde o início e estou muito satisfeito com o produto no geral! Que ideia excelente eles trouxeram para a mesa! Um grande uau!",
+      "user2_comment": "Eu frequento os workshops da Marta desde o início e estou muito satisfeito com o produto no geral! Que ideia excelente eles trouxeram para a mesa! Um grande uau! <br/><br/> Ascent-U foi incrível e mais do que incrível, e mais alguma coisa mooooreee"
+    },
+    "contact": {
+      "title_1": "Vamos elevar nossa energia ao nível de",
+      "title_2": "aceitação e amor",
+      "contact_me": "Entre em contato",
+      "contact_us": "Contate-nos"
+    }
+  },
+  "Guestbook": {
+    "meta_title": "Livro de visitas",
+    "meta_description": "Um exemplo de operação CRUD",
+    "database_powered_by": "Banco de dados alimentado por",
+    "loading_guestbook": "Carregando livro de visitas...",
+    "error_reporting_powered_by": "Relatório de erros alimentado por"
+  },
+  "GuestbookForm": {
+    "username": "Nome de usuário",
+    "body": "Mensagem",
+    "save": "Salvar"
+  },
+  "About": {
+    "meta_title": "Sobre",
+    "meta_description": "Descrição da página Sobre",
+    "about_paragraph": "Bem-vindo à nossa página Sobre! Somos uma equipe de pessoas apaixonadas dedicadas a criar softwares incríveis.",
+    "translation_powered_by": "Tradução fornecida por",
+    "about_me": "Sobre mim",
+    "about_desc_1": "Sou Psicólogo Clínico, Psicoterapeuta, Hipnoterapeuta e Curador Energético, que viveu no exterior por mais de 20 anos. Originalmente da Polônia, morei na França, Hong Kong, Vietnã e Singapura, antes de me mudar para São Paulo, no Brasil, há alguns anos. Mudar de um país para outro com minha família (com três filhos) me deu uma compreensão profunda dos desafios da vida de expatriado, mas também a oportunidade de aprender sobre muitas culturas e desenvolver minhas habilidades linguísticas, interpessoais e terapêuticas, não apenas graças à oportunidade de trabalhar com pessoas de diferentes partes do mundo e de diferentes culturas, mas também graças à oportunidade de treinar ao lado de vários especialistas de diferentes países.",
+    "about_desc_2": "Obtive um Mestrado em Psicologia Clínica pela Universidade Paris 8 (França) e também concluí o treinamento completo de Terapia do Esquema de Jeffrey Young, três níveis de treinamento em EMDR, incluindo EMDR para trauma complexo, e treinamentos em Técnica de Libertação Emocional, além de receber vários certificados de workshops nessas áreas. Também possuo um Diploma de Praticante Avançado em Hipnoterapia Clínica do London College of Clinical Hypnosis na Ásia (credenciado pela Universidade de West London, Reino Unido).",
+    "about_desc_3": "Paralelamente ao desenvolvimento de minhas habilidades psicoterapêuticas de forma mais clássica e tradicional, desenvolvi meu interesse pela expansão da consciência de maneira mais ampla, vários métodos de trabalho com energia (incluindo Reiki ou Tantra), várias técnicas de meditação e afirmação, bem como regressão (hipnótica e não hipnótica).",
+    "about_desc_4": "Sou membro da British Society of Clinical Hypnosis (BSCH) e da International Society of Schema Therapy. Também sou membro da rede Psy Expat e do Syndicat National des Psychologues na França.",
+    "about_desc_5": "Tenho também a minha segunda grande paixão: trekking de montanha e tive a oportunidade de percorrer muitas trilhas incríveis e escalar montanhas lindas na Ásia, Europa e América do Sul."
+  },
+  "AboutAscentU": {
+    "meta_title": "Sobre ascent-u",
+    "meta_description": "Sobre a descrição da página ascent-u",
+    "discover_all": "Descubra tudo"
+  },
+  "AboutAscentUPage": {
+    "quote": "‘’Nada real pode ser ameaçado. Nada irreal existe.’’",
+    "course_miracles": "Um Curso em Milagres",
+    "ascent_u_come_about_heading": "Como surgiu a ideia do Ascent-U?",
+    "ascent_u_come_about_description1": "<strong>Por um lado,</strong> do desejo de trabalhar com <strong> saúde mental, bem-estar e desenvolvimento pessoal e espiritual no sentido mais amplo.</strong> Do desejo de ajudar as pessoas a encontrar equilíbrio e paz interior, alegria e harmonia, começando pelo aprendizado da autoaceitação e amor próprio. Oferecemos ajuda para curar o passado e liberar o potencial interior, para que a pessoa possa crescer, se realizar e criar sua vida como deseja.",
+    "ascent_u_come_about_description2": "<strong>Por outro lado,</strong> o estudo da psicologia, seguido por várias formas de psicoterapia e trabalho com energia, bem como anos de trabalho com pacientes, nos mostraram que <strong> o ser humano deve ser abordado de forma holística,</strong> que os melhores resultados são obtidos ao tratar o ser humano de forma integral e combinar diferentes técnicas. Sabendo também que temos diferentes corpos (em termos simples: físico, mental, emocional e espiritual), que estão interconectados e interagem uns com os outros, decidimos oferecer <strong> nossa abordagem holística.</strong> Ela inclui uma combinação de técnicas psicoterapêuticas clássicas com atenção plena, meditação, hipnose, técnicas de respiração, psicológicas e energéticas e quânticas <strong> (Psicologia Energética).</strong> Paralelamente, promovemos e incentivamos a <strong>atividade física </strong> e o <strong>contato com a natureza,</strong> bem como <strong>alimentação saudável,</strong> pois reconhecemos seu papel fundamental na nossa saúde mental. Gostaríamos de acrescentar que nossas ações também são inspiradas pelo conteúdo do livro Um Curso em Milagres, pelos trabalhos de David R. Hawkins, Eckhart Tolle e Joe Dispenza.",
+    "ascent_u_come_about_description3": "Acreditamos que <strong> os fundamentos da terapia e do trabalho sobre si mesmo estão na compreensão de que nossos pensamentos e crenças criam nossa realidade, além do aprendizado da autoaceitação e amor próprio.</strong> Com isso, é possível se conectar com nosso Eu Autêntico e abrir caminho para uma vida de sucesso.",
+    "tolle_quotes1": "‘’Se você acertar o interior, o exterior se encaixará. Primário",
+    "tolle_quotes2": "A realidade está dentro, a realidade secundária está fora.’’",
+    "tolle_name": "E. Tolle",
+    "ascent_u_come_about_description4": "Quando você não se aceita e não se ama, ou quando não aceita e não ama alguma parte de si, você sente vergonha e, como consequência, medo. O medo de que alguém descubra seus defeitos, que alguém descubra que você não é bom o suficiente, que te julgue. Você se torna sensível à crítica. Sente medo do rejeição, medo do fracasso, acredita que não merece amor. Muitas vezes, estamos mais conscientes do medo do que da vergonha, que está profundamente enterrada em nossa psique.",
+    "ascent_u_come_about_description5": "Quando você não se aceita e não se ama, ou quando não aceita e não ama alguma parte de si mesmo, algum aspecto de si, você sente vergonha e, consequentemente, sente medo. Medo de que alguém descubra suas falhas, que alguém descubra que você não é bom o suficiente, que o julgue. Você se torna sensível à crítica. Sente o medo da rejeição, o medo do fracasso, acredita que não merece ser amado. Na maioria das vezes, estamos muito mais conscientes da presença do medo do que da vergonha, que se esconde muito mais profundamente em nossa psique.",
+    "ascent_u_come_about_description6": "Por isso, <strong> nossa missão é ajudar as pessoas a sair das baixas vibrações de vergonha e medo e elevar seu nível de consciência por meio do aprendizado de aceitação e amor,</strong> primeiro a si mesmas e depois aos outros. Queremos ajudar as pessoas a saírem de padrões e <strong> crenças limitantes,</strong> que embora não as façam felizes, paradoxalmente criam a chamada zona de conforto. <strong> Queremos ajudar as pessoas a encontrar coragem para superar seus medos e sair de sua zona de conforto, criando uma nova realidade, uma nova vida que desejam, e na qual as acompanha o sucesso:</strong> saúde, equilíbrio, paixão, abundância, sucesso, alegria e paz. Alcançar isso se torna possível, como dissemos acima, por meio da elevação do nível de consciência e conexão com nosso Eu Autêntico. Através do aprendizado de uma nova maneira de ver a si mesmo, os outros e o mundo ao nosso redor. Através do aprendizado de amor e aceitação. Através da consciência de que merecemos o melhor. Nesse nível, somos Consciência Pura Universal, o Universo. Sabemos que <strong> todos somos um. </strong>",
+    "ascent_u_come_about_description7": "Portanto, <strong> nossa missão é ajudar as pessoas a saírem das vibrações baixas de vergonha e medo e elevar seu nível de consciência aprendendo a aceitar e amar, </strong> primeiro a si mesmas e depois aos outros. Queremos ajudar as pessoas a saírem de esquemas e <strong> crenças limitantes </strong> que, embora não as façam felizes, paradoxalmente criam uma zona de conforto. <strong> Queremos ajudar as pessoas a encontrar a coragem para superar seus medos e sair de sua zona de conforto, para criar uma nova e melhor realidade, uma nova vida, aquela que desejam e na qual são acompanhadas pelo sucesso: </strong> saúde, equilíbrio, paixão, abundância, sucesso, alegria e paz. Alcançar isso se torna possível, como escrevemos acima, ao elevar o nível de consciência e conectar-se com o nosso Eu Autêntico. Por meio do aprendizado de uma nova maneira de nos percebermos, de percebermos os outros e o mundo ao nosso redor. Por meio do aprendizado de amor e aceitação. Por meio do conhecimento de que merecemos o melhor. Nesse nível, somos Consciência Pura, Universal, o Universo. Sabemos que <strong> somos todos um.</strong>",
+    "ascent_u_come_about_mission": "<strong> Nossa missão é ajudá-lo a escolher o amor em vez do medo.</strong>",
+    "ascent_u_come_from": "De onde vem o nome Ascent-U?",
+    "ascent_u_come_from_description1": "<strong> Ascent </strong> significa <strong> movimento para cima, </strong> o ato de mudar de posição para cima <strong> (subida, ascensão, escalada), subir ao topo de uma montanha </strong> ou colina.",
+    "ascent_u_come_from_description2": "<strong> U </strong> é a abreviação de <strong> universal e único </strong>. Isso nos dá uma imagem completa do que é o Ascent-U – uma jornada em direção a uma consciência superior e se tornar nosso melhor, verdadeiro e autêntico eu.",
+    "ascent_u_come_from_description3": "Isso é facilitado por nossa abordagem holística, onde estão presentes todos os corpos: <strong> físico, energético, emocional, mental e espiritual.</strong> Ascent-U é o caminho para a excelência em todos os aspectos, para saúde, abundância, paixão, paz, amor e alegria.",
+    "our_mission_our_values": "O nome ilustra tanto a nossa missão quanto os nossos valores",
+    "mission_title": "Nossa missão",
+    "our_mission_description": "<strong> Ajudar nossos clientes a elevar o nível de energia </strong> para que encontrem equilíbrio interior e bem-estar. <strong> Ajudá-los a elevar seu nível de consciência </strong> de um estado de vergonha e medo para um de aceitação e amor, a fim de se conectar consigo mesmos, com o Eu Autêntico e com o universo, alcançando a paz interior. Trata-se de uma transição de uma consciência orientada a objetos (bens materiais, conquistas, status) para uma consciência expandida, voltada para o Eu, que coloca o valor de uma pessoa no simples fato de sua existência; uma consciência onde todos somos um.",
+    "our_values_our_two_passions": "Nossos valores - nossas duas paixões:",
+    "passion_one": "<strong> Ajudar os outros </strong> por meio do trabalho com a <strong> saúde mental, desenvolvimento pessoal e espiritual, e bem-estar, usando nossa abordagem holística, </strong>",
+    "passion_two": "<strong> Natureza e atividade física,</strong> especialmente trekking nas montanhas.",
+    "passion_end": "Nosso trabalho com os clientes também é orientado por valores como autenticidade, neutralidade, empatia, bondade e respeito.",
+    "other_values": "Outros valores promovidos pela Ascent-U",
+    "other_values_self_awareness": "<strong> Autoconsciência,</strong> que é o início do caminho para a saúde mental e a base do nosso trabalho. Podemos alcançá-la por meio da auto-observação e mindfulness.",
+    "other_values_courage": "<strong> Coragem,</strong> que é uma ponte e uma transição. A transição da energia negativa para a positiva, de uma consciência de baixa vibração (vergonha, culpa, tristeza, luto, medo e raiva) para uma consciência de alta vibração (neutralidade, prontidão, aceitação, amor, alegria e paz interior) (‘Mapa da consciência explicado’ por David R. Hawkins). Nossa missão é ajudar as pessoas a encontrar a coragem para fazer essa transição.",
+    "other_values_forgiveness": "<strong> Aceitação e perdão,</strong> aceitar a si mesmo e aos outros, situações e a vida como ela é. O perdão de si mesmo e dos outros. Ambos se tornam possíveis desenvolvendo empatia, compaixão, respeito, bondade e neutralidade (capacidade de observar sem julgar).",
+    "other_values_love": "<strong> Amor,</strong> que é uma força silenciosa mas poderosa. Uma força que inspira, cura, eleva, dá coragem e encoraja. Por meio dela, tudo é possível, o processo de criação é possível e a vida é criada. O amor é o portal para a consciência expandida, para a zona espiritual.",
+    "other_values_authenticity": "<strong> Autenticidade,</strong> quando, graças ao amor e à aceitação de si mesmo, temos coragem de ser quem realmente somos; não precisamos mais usar máscaras, nos encaixar nos outros, tentar agradar e cumprir as expectativas dos outros. Paramos de buscar aprovação e reconhecimento dos outros – encontramos o nosso Eu Autêntico, somos nós mesmos, Consciência Pura.",
+    "other_values_gratitude": "<strong> Gratidão </strong> por tudo o que temos, por quem somos. Ela nos dá acesso a recursos ilimitados de abundância em todas as dimensões possíveis.",
+    "other_values_transcendence": "<strong> Transcendência,</strong> ou experiência extra-sensorial, na qual transcende-se as fronteiras do próprio eu individual, da própria identidade, e entendemos que não somos apenas parte integrante do imenso universo multidimensional, mas que o universo está em nós, que o Eu e o universo são um só e que todos somos um. É o conhecimento da verdade absoluta, da verdade universal.",
+    "other_values_inner_peace": "<strong> Paz interior,</strong> que podemos alcançar quando transcendemos nosso eu individual e que é um dos mais altos níveis de consciência. Não há mais conflitos ou negatividade aqui. As ações são fáceis, harmoniosas e espontâneas. Há um amor envolvente, sentido como paz, atemporalidade, realização, satisfação, imobilidade, plenitude. Há um silêncio interior e uma luz, uma sensação de liberdade total e, ao mesmo tempo, unidade e conexão. Isso é o que almejamos e desejamos para todos!",
+    "other_values_inner_peace_end": "Para ser feliz, é preciso primeiro ser capaz de se amar e se aceitar. Ninguém mais nos fará seres felizes. Para superar o medo, para ser plenamente realizado e viver a vida que queremos, primeiro precisamos aceitar e nos amar. Para amar aos outros, precisamos primeiro aprender a nos amar. Para estabelecer uma relação saudável com qualquer pessoa, baseada no amor e não na carência, no sacrifício de si mesmo e no medo, é preciso primeiro saber como se amar. Por meio do amor, tudo floresce. Nos aproxima e nos abre aos outros. Uma pessoa que se ama é feliz, generosa, apoiante, cheia de perdão e alguém em quem se pode confiar. Ela é uma melhor parceira, mãe, amiga... Sua maior contribuição para o bem-estar da humanidade é, portanto, sua própria felicidade! <strong> Quando um de nós perde, todos perdemos; quando um de nós ganha, todos ganhamos. </strong>",
+    "other_values_energy": "Gostaríamos de mencionar também a importância da <strong>energia.</strong> A energia da qual somos feitos, assim como o mundo ao nosso redor, a natureza e o universo. A energia com a qual estamos conectados ao universo, uns aos outros, a tudo.",
+    "click_to_see_more": "Clique para saber mais sobre energia >",
+    "person_behind": "Quem é a pessoa por trás disso?",
+    "person_description1": "Meu nome é Marta Golaszewska-Gilbert e sou uma <strong>psicóloga energética.</strong> Sou da Polônia, mas vivi no exterior por mais de 20 anos. Morei na França, Hong Kong, Vietnã e Cingapura antes de me estabelecer em São Paulo, Brasil, há alguns anos. Atualmente, divido meu tempo e minha vida entre o Brasil e a Europa. O fato de me mudar de um país para o outro com minha família (três filhos) me deu uma compreensão profunda dos desafios da vida de expatriado. Mas, acima de tudo, isso me deu a oportunidade de aprender muitas culturas e desenvolver minhas habilidades linguísticas, interpessoais e terapêuticas, não apenas pela oportunidade de trabalhar com pessoas de diferentes culturas e partes do mundo, mas também pela oportunidade de aprender ao lado de muitos profissionais de diferentes países.",
+    "person_description2": "Sou uma <strong>psicóloga clínica, psicoterapeuta, hipnoterapeuta e curadora energética.</strong> Concluí meu mestrado em <strong>psicologia clínica</strong> na França na Universidade Paris 8. Depois, estudei diferentes formas de terapia para adquirir as ferramentas necessárias para minha profissão. Assim, fiz uma formação em <strong>terapia de esquemas</strong> com Jeffrey Young, três níveis de treinamento em <strong>EMDR</strong> (Dessensibilização e Reprocessamento por Movimentos Oculares), incluindo o EMDR usado no tratamento de trauma complexo, e treinamento em <strong>Técnicas de Libertação Emocional (EFT)</strong>. Tenho um diploma de Praticante Avançado em Hipnoterapia Clínica pelo London College of Clinical Hypnosis (acreditado pela Universidade de West London, Reino Unido). Além disso, fiz treinamentos nas seguintes áreas: terapia cognitivo-comportamental, terapia centrada na solução, terapia dos estados do ego, abordagem humanista (particularmente Irvin Yalom) e <strong>Mindfulness.</strong> Estudei particularmente as teorias de <strong>Carl Gustav Jung</strong> e aperfeiçoei a interpretação dos sonhos.",
+    "person_description3": "Embora esteja familiarizada com tantas abordagens diferentes e tipos de terapia, sentia que algo estava faltando. Assim, paralelamente ao desenvolvimento da minha prática psicoterapêutica no sentido mais tradicional, desenvolvi conhecimento e habilidades no campo da <strong>expansão da consciência, psicologia quântica,</strong> diferentes métodos de <strong>trabalho com energia, meditação</strong> e técnicas de <strong>manifestação</strong>, bem como <strong>regressão</strong> (hipnótica e não hipnótica).",
+    "person_description4": "<strong>No meu trabalho,</strong> que se tornou minha paixão, combino psicoterapia clássica com técnicas energéticas e quânticas para oferecer uma abordagem holística que abrange todos os corpos do ser humano (em palavras simples: físico, mental, emocional e espiritual). Minha prática também é inspirada no conteúdo do livro <strong>A Course in Miracles</strong>, nos trabalhos de David R. Hawkins, Eckhart Tolle e Joe Dispenza.",
+    "person_description5": "Minha outra grande paixão é <strong>natureza e trekking,</strong> especialmente <strong>trekking nas montanhas.</strong> Tive a oportunidade de percorrer muitos trilhos maravilhosos e escalar muitas montanhas deslumbrantes na Ásia, Europa e América do Sul.",
+    "person_description6": "Sei como é importante e benéfico ser fisicamente ativo para a saúde física e mental (veja",
+    "person_description7": "), e sempre quis combinar minhas duas paixões, então organizo <strong>Trips to U</strong>, que incluem workshops psicoenergéticos e trekking na natureza. <strong>Venha em uma jornada para si mesmo e para o Universo! Você está convidado com carinho!</strong>"
+  },
+  "ComingSoon": {
+    "title": "Em breve..."
+  },
+  "Blog": {
+    "title": "Bem-vindo ao nosso blog!",
+    "short_desc": "Aqui você encontrará informações e recursos relacionados ao nosso corpo, à saúde mental, às técnicas que usamos em nossas sessões, ao desenvolvimento pessoal e espiritual, ao bem-estar e às nossas Viagens para U. Desejamos a você descobertas inspiradoras!",
+    "search": "Pesquisar",
+    "loading_blog": "Carregando Blog",
+    "loading_all_blogs": "Carregando todos os blogs...",
+    "no_blogs_found": "Nenhum blog encontrado",
+    "published": "Publicado",
+    "all_articles": "Todos os recursos"
+  },
+  "ContactPage": {
+    "title": "Contato akcent-u!",
+    "meta_title": "Contato com sprawie wspinaczki",
+    "meta_description": "Informação de contato ou wejściu",
+    "full_name": "Eu sou o nazwisko",
+    "enter_your_full_name": "Wpisz swoje pełne imię i nazwisko",
+    "email_address": "Endereço de e-mail",
+    "your_email_address": "Dois endereços de e-mail",
+    "select_subject": "Tema Wybierz",
+    "Select_least_one": "O que você está fazendo agora",
+    "wiadomość": "Wiadomość",
+    "enter_message_here": "Wpisz tutaj swoją wiadomość",
+    "contact_us": "Entre em contato conosco!",
+    "have_a_question": "Masz pytanie? Você não está com nami skontaktować!",
+    "contact_us_now": "Contato com você mesmo com nami teraz"
+  },
+  "Course": {
+    "find_a_specialist": "Encontre um especialista",
+    "filer_coaches_by": "Filtrar Coaches por",
+    "session_workshop_trip": "Encontre uma sessão, workshop ou viagem",
+    "type_of_service": "Tipo de serviço",
+    "body": "Corpo",
+    "location": "Localização",
+    "onsite": "No local",
+    "online": "On-line",
+    "area_of_expertise": "Área de Atuação",
+    "reset_btn": "Reiniciar",
+    "search_by_keyword": "Pesquisar por palavras-chave",
+    "filter_by_name_area_expertise": "Filtrar por nome, área de atuação ou tipo...",
+    "sort_by": "Ordenar por",
+    "top_voted": "Mais votados",
+    "loading_course": "Carregando Curso",
+    "full_program": "Programa completo",
+    "off": "DESCONTO",
+    "free_for_today": "Grátis por hoje",
+    "hours_on_demand": "horas sob demanda",
+    "access_community": "Acesso especial à comunidade",
+    "join_now": "Junte-se agora",
+    "rating": "Classificação",
+    "total_visitors": "total de visitantes",
+    "reviews": "Avaliações",
+    "about_the_expert": "Sobre o especialista",
+    "select": "Selecione",
+    "title": "Título",
+    "price": "Preço",
+    "visitors": "Visitantes",
+    "Yoga": "Ioga",
+    "Hypnotherapy": "Hipnoterapia",
+    "Bodies_Data": {
+      "physical": "Físico",
+      "mental": "Mental",
+      "emotional": "Emocional",
+      "spiritual": "Espiritual"
+    },
+    "Type_of_Service_Data": {
+      "individual_sessions": "Sessões individuais",
+      "group_sessions": "Sessões em grupo",
+      "workshops": "Workshops",
+      "webinars": "Webinários",
+      "trips_to_u": "Viagens para U"
+    },
+    "Area_of_Expertise_Data": {
+      "yoga": "Yoga",
+      "energetic_approaches": "Abordagens energéticas",
+      "hypnotherapy": "Hipnoterapia",
+      "eft": "EFT",
+      "dietetics": "Dietetics",
+      "mindfulness": "Mindfulness",
+      "acupuncture": "Acupuntura",
+      "massage_therapy": "Massagem terapêutica",
+      "art_therapy": "Terapia através da arte",
+      "life_coaching": "Coaching de vida"
+    }
+  },
+  "Portfolio": {
+    "meta_title": "Portfólio",
+    "meta_description": "Bem-vindo à minha página de portfólio!",
+    "presentation": "Bem-vindo à minha página de portfólio! Aqui você encontrará uma coleção cuidadosamente selecionada do meu trabalho e conquistas. Através deste portfólio, desejo mostrar minha experiência, criatividade e o valor que posso trazer para seus projetos.",
+    "portfolio_name": "Portfólio {name}",
+    "error_reporting_powered_by": "Relatório de erros alimentado por",
+    "coverage_powered_by": "Cobertura de código alimentada por"
+  },
+  "PortfolioSlug": {
+    "meta_title": "Portfólio {slug}",
+    "meta_description": "Descrição do portfólio {slug}",
+    "header": "Portfólio {slug}",
+    "content": "Criação de um conjunto de materiais promocionais e elementos de marca para um evento corporativo. Elaboração de um tema visualmente unificado, incluindo um logotipo, pôsteres, banners e ativos digitais. Integração da identidade da marca do cliente com uma abordagem contemporânea e inovadora. Recebimento de respostas favoráveis dos participantes do evento, resultando em um evento bem-sucedido com maior engajamento dos participantes e aumento da visibilidade da marca.",
+    "log_management_powered_by": "Gestão de logs alimentada por"
+  },
+  "SignIn": {
+    "meta_title": "Entrar",
+    "meta_description": "Entre facilmente na sua conta com nosso processo de login amigável."
+  },
+  "SignUp": {
+    "meta_title": "Cadastrar-se",
+    "meta_description": "Crie uma conta facilmente através do nosso processo de inscrição intuitivo."
+  },
+  "Dashboard": {
+    "meta_title": "Painel",
+    "hello_message": "Olá {e-mail}!",
+    "you_dont_have": "Você ainda não tem nenhum pedido",
+    "go_to_our_offer": "Acesse ‘nossa oferta’ para ver eventos, viagens e muito mais!",
+    "go_to_Offer": "Vá para nossa oferta",
+    "my_orders": "Meus pedidos",
+    "total_orders": "Total de pedidos",
+    "expired": "Expirado",
+    "days_left": "dias restantes",
+    "reviews": "Comentários",
+    "wachowski_Farm_house": "Casa da Fazenda Wachowski",
+    "we_will_help_you": "Nós ajudaremos você a se tornar um agricultor melhor em uma semana. Junte-se a nós nesta experiência muito diferente agora mesmo!",
+    "contact_support": "Entre em contato com o suporte",
+    "january_2024": "11 de janeiro de 2024",
+    "11_pm": "23h00",
+    "online": "On-line",
+    "go_to_link": "Ir para o link",
+    "links": "Links",
+    "download": "Baixar",
+    "meeting_links": "Links da reunião",
+    "uploaded_documents": "Documentos enviados"
+  },
+  "UserProfile": {
+    "meta_title": "Perfil do usuário"
+  },
+  "DashboardLayout": {
+    "dashboard_link": "Painel",
+    "user_profile_link": "Gerenciar sua conta",
+    "sign_out": "Sair"
+  }
+}
