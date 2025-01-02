@@ -70,7 +70,7 @@ pnpm dev
 6. You can now interact with the application.
 
 ## Project Structure
-
+```bash
 bug-solution-client/
 ├── src/
 │ ├── app/
@@ -83,6 +83,7 @@ bug-solution-client/
 │ └── lib/
 ├── public/
 └── config/
+```
 
 ## Available Scripts
 
