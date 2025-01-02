@@ -2,6 +2,7 @@
 
 "use client";
 
+import { API_URL } from "config";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -48,18 +49,18 @@ const Index = () => {
 
     try {
       setIsLoading(true);
-      
+
       if (selectedType === "bug") {
         // For bug type - send both prompt and image
         const formData = new FormData();
-        formData.append('prompt', prompt);
+        formData.append("prompt", prompt);
         if (selectedFile) {
-          formData.append('imageFile', selectedFile);
+          formData.append("imageFile", selectedFile);
         }
-        formData.append('feedbackType', selectedType);
+        formData.append("feedbackType", selectedType);
 
         const response = await fetch(
-          "http://localhost:5000/api/v1/ask-query/gemini-image",
+          `${API_URL}/api/v1/ask-query/gemini-image`,
           {
             method: "POST",
             body: formData,
@@ -70,7 +71,7 @@ const Index = () => {
       } else {
         // For other types - send only prompt
         const response = await fetch(
-          "http://localhost:5000/api/v1/ask-query/gemini-text",
+          `${API_URL}/api/v1/ask-query/gemini-text`,
           {
             method: "POST",
             headers: {
@@ -83,7 +84,9 @@ const Index = () => {
         setApiResponse(responseJson.data);
       }
     } catch (err: any) {
-      setError(`An error occurred while processing your request: ${  err.message}`);
+      setError(
+        `An error occurred while processing your request: ${err.message}`
+      );
     } finally {
       setIsLoading(false);
     }
@@ -91,19 +94,22 @@ const Index = () => {
 
   const formatResponse = (text: string) => {
     // Split by double newlines or numbered points
-    return text.split(/\n\n|\d+\.\s/).filter(Boolean).map((paragraph, index) => (
-      <p key={`${index+1}`} className="mb-2">
-        {paragraph.startsWith('**') ? (
-          // Handle bold text
-          <strong>{paragraph.replace(/\*\*/g, '')}</strong>
-        ) : paragraph.startsWith('*') ? (
-          // Handle bullet points
-          <li className="ml-4">{paragraph.replace(/^\*\s/, '')}</li>
-        ) : (
-          paragraph
-        )}
-      </p>
-    ));
+    return text
+      .split(/\n\n|\d+\.\s/)
+      .filter(Boolean)
+      .map((paragraph, index) => (
+        <p key={`${index + 1}`} className="mb-2">
+          {paragraph.startsWith("**") ? (
+            // Handle bold text
+            <strong>{paragraph.replace(/\*\*/g, "")}</strong>
+          ) : paragraph.startsWith("*") ? (
+            // Handle bullet points
+            <li className="ml-4">{paragraph.replace(/^\*\s/, "")}</li>
+          ) : (
+            paragraph
+          )}
+        </p>
+      ));
   };
 
   return (
@@ -151,7 +157,7 @@ const Index = () => {
                     if (error) setError("");
                   }}
                   placeholder="Enter your prompt"
-                  className={`${selectedType === "bug" ? "h-[600px]" : "h-[300px]"} w-full rounded-md border ${error ? 'border-red-500' : ''} p-2 outline-none`}
+                  className={`${selectedType === "bug" ? "h-[600px]" : "h-[300px]"} w-full rounded-md border ${error ? "border-red-500" : ""} p-2 outline-none`}
                 />
                 {error && <p className="mt-1 text-sm text-red-500">{error}</p>}
               </div>
