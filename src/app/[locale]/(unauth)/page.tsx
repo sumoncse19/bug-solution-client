@@ -20,18 +20,95 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 const Index = () => {
   const [selectedType, setSelectedType] = useState<string>("bug");
   const [imagePreview, setImagePreview] = useState<string | null>(null);
+  const [prompt, setPrompt] = useState<string>("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [apiResponse, setApiResponse] = useState<string>("");
+  const [error, setError] = useState<string>("");
+  const [selectedFile, setSelectedFile] = useState<File | null>(null);
 
   const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (file) {
+      setSelectedFile(file);
       const imageUrl = URL.createObjectURL(file);
       setImagePreview(imageUrl);
     }
   };
 
+  const handleSubmit = async () => {
+    if (!prompt.trim()) {
+      setError("Please enter a prompt");
+      return;
+    }
+    if (selectedType === "bug" && !selectedFile) {
+      setError("Please upload an image");
+      return;
+    }
+    setError("");
+
+    try {
+      setIsLoading(true);
+      
+      if (selectedType === "bug") {
+        // For bug type - send both prompt and image
+        const formData = new FormData();
+        formData.append('prompt', prompt);
+        if (selectedFile) {
+          formData.append('imageFile', selectedFile);
+        }
+        formData.append('feedbackType', selectedType);
+
+        const response = await fetch(
+          "http://localhost:5000/api/v1/ask-query/gemini-image",
+          {
+            method: "POST",
+            body: formData,
+          }
+        );
+        const responseJson = await response.json();
+        setApiResponse(responseJson.data.content);
+      } else {
+        // For other types - send only prompt
+        const response = await fetch(
+          "http://localhost:5000/api/v1/ask-query/gemini-text",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ prompt, feedbackType: selectedType }),
+          }
+        );
+        const responseJson = await response.json();
+        setApiResponse(responseJson.data);
+      }
+    } catch (err: any) {
+      setError(`An error occurred while processing your request: ${  err.message}`);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const formatResponse = (text: string) => {
+    // Split by double newlines or numbered points
+    return text.split(/\n\n|\d+\.\s/).filter(Boolean).map((paragraph, index) => (
+      <p key={`${index+1}`} className="mb-2">
+        {paragraph.startsWith('**') ? (
+          // Handle bold text
+          <strong>{paragraph.replace(/\*\*/g, '')}</strong>
+        ) : paragraph.startsWith('*') ? (
+          // Handle bullet points
+          <li className="ml-4">{paragraph.replace(/^\*\s/, '')}</li>
+        ) : (
+          paragraph
+        )}
+      </p>
+    ));
+  };
+
   return (
     <section className="flex h-screen items-center justify-center">
-      <div className="w-1/2 space-y-4 rounded-lg border bg-white p-4 shadow-xl">
+      <div className="w-[90vw] space-y-4 rounded-lg border bg-white p-4 shadow-xl 3xl:w-1/2">
         <h1 className="text-center text-2xl">This is from home page</h1>
         <Tabs defaultValue="submit-feedback" className="w-full space-y-6">
           <TabsList className="h-10 w-full">
@@ -68,9 +145,15 @@ const Index = () => {
                 <Label htmlFor="prompt">Prompt</Label>
                 <textarea
                   id="prompt"
+                  value={prompt}
+                  onChange={(e) => {
+                    setPrompt(e.target.value);
+                    if (error) setError("");
+                  }}
                   placeholder="Enter your prompt"
-                  className={`${selectedType === "bug" ? "h-[600px]" : "h-[300px]"} w-full rounded-md border p-2 outline-none`}
+                  className={`${selectedType === "bug" ? "h-[600px]" : "h-[300px]"} w-full rounded-md border ${error ? 'border-red-500' : ''} p-2 outline-none`}
                 />
+                {error && <p className="mt-1 text-sm text-red-500">{error}</p>}
               </div>
 
               {selectedType === "bug" && (
@@ -103,9 +186,24 @@ const Index = () => {
               )}
             </div>
 
+            <div className="rounded-md border p-4">
+              <h3 className="mb-4 text-lg font-bold">AI Response:</h3>
+              <div className="prose max-w-none">
+                {apiResponse ? (
+                  formatResponse(apiResponse)
+                ) : (
+                  <p className="italic text-gray-500">No response yet</p>
+                )}
+              </div>
+            </div>
             <div className="flex w-full flex-col items-end justify-end">
-              <Button variant="outline" className="w-fit">
-                Button
+              <Button
+                variant="outline"
+                className="w-fit"
+                onClick={handleSubmit}
+                disabled={isLoading || !prompt.trim()}
+              >
+                {isLoading ? "Sending..." : "Submit"}
               </Button>
             </div>
           </TabsContent>
