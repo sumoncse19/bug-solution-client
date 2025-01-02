@@ -12,6 +12,13 @@ A modern feedback system powered by AI that helps users get instant solutions fo
 - 📋 Feedback history view
 - 📄 Pagination for feedback lists
 
+## Live Preview and GitHub URL
+
+[Live Preview Frontend](https://bug-solution.vercel.app/)
+[Live Preview Backend](https://bug-solution.onrender.com/)
+[GitHub Repository Frontend](https://github.com/sumoncse19/bug-solution-client)
+[GitHub Repository Backend](https://github.com/sumoncse19/bug-solution-with-ai)
+
 ## Tech Stack
 
 - **Framework:** Next.js 14 with App Router
@@ -35,6 +42,7 @@ Before you begin, ensure you have installed:
 1. Clone the repository:
 ```bash
 git clone https://github.com/sumoncse19/bug-solution-client.git
+cd bug-solution-client
 ```
 
 2. Install dependencies:
