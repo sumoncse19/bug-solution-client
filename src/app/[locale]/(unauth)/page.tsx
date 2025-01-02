@@ -1,30 +1,28 @@
-/* eslint-disable prettier/prettier */
+'use client';
 
-"use client";
+import { API_URL } from 'config';
+import Image from 'next/image';
+import { useState } from 'react';
 
-import { API_URL } from "config";
-import Image from "next/image";
-import { useState } from "react";
-
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+} from '@/components/ui/select';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const Index = () => {
-  const [selectedType, setSelectedType] = useState<string>("bug");
+  const [selectedType, setSelectedType] = useState<string>('bug');
   const [imagePreview, setImagePreview] = useState<string | null>(null);
-  const [prompt, setPrompt] = useState<string>("");
+  const [prompt, setPrompt] = useState<string>('');
   const [isLoading, setIsLoading] = useState(false);
-  const [apiResponse, setApiResponse] = useState<string>("");
-  const [error, setError] = useState<string>("");
+  const [apiResponse, setApiResponse] = useState<string>('');
+  const [error, setError] = useState<string>('');
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
 
   const handleImageUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -38,33 +36,32 @@ const Index = () => {
 
   const handleSubmit = async () => {
     if (!prompt.trim()) {
-      setError("Please enter a prompt");
+      setError('Please enter a prompt');
       return;
     }
-    if (selectedType === "bug" && !selectedFile) {
-      setError("Please upload an image");
+    if (selectedType === 'bug' && !selectedFile) {
+      setError('Please upload an image');
       return;
     }
-    setError("");
+    setError('');
 
     try {
       setIsLoading(true);
 
-      if (selectedType === "bug") {
-        // For bug type - send both prompt and image
+      if (selectedType === 'bug') {
         const formData = new FormData();
-        formData.append("prompt", prompt);
+        formData.append('prompt', prompt);
         if (selectedFile) {
-          formData.append("imageFile", selectedFile);
+          formData.append('imageFile', selectedFile);
         }
-        formData.append("feedbackType", selectedType);
+        formData.append('feedbackType', selectedType);
 
         const response = await fetch(
           `${API_URL}/api/v1/ask-query/gemini-image`,
           {
-            method: "POST",
+            method: 'POST',
             body: formData,
-          }
+          },
         );
         const responseJson = await response.json();
         setApiResponse(responseJson.data.content);
@@ -73,19 +70,19 @@ const Index = () => {
         const response = await fetch(
           `${API_URL}/api/v1/ask-query/gemini-text`,
           {
-            method: "POST",
+            method: 'POST',
             headers: {
-              "Content-Type": "application/json",
+              'Content-Type': 'application/json',
             },
             body: JSON.stringify({ prompt, feedbackType: selectedType }),
-          }
+          },
         );
         const responseJson = await response.json();
         setApiResponse(responseJson.data);
       }
     } catch (err: any) {
       setError(
-        `An error occurred while processing your request: ${err.message}`
+        `An error occurred while processing your request: ${err.message}`,
       );
     } finally {
       setIsLoading(false);
@@ -99,12 +96,12 @@ const Index = () => {
       .filter(Boolean)
       .map((paragraph, index) => (
         <p key={`${index + 1}`} className="mb-2">
-          {paragraph.startsWith("**") ? (
+          {paragraph.startsWith('**') ? (
             // Handle bold text
-            <strong>{paragraph.replace(/\*\*/g, "")}</strong>
-          ) : paragraph.startsWith("*") ? (
+            <strong>{paragraph.replace(/\*\*/g, '')}</strong>
+          ) : paragraph.startsWith('*') ? (
             // Handle bullet points
-            <li className="ml-4">{paragraph.replace(/^\*\s/, "")}</li>
+            <li className="ml-4">{paragraph.replace(/^\*\s/, '')}</li>
           ) : (
             paragraph
           )}
@@ -145,7 +142,7 @@ const Index = () => {
             </div>
 
             <div
-              className={`grid w-full ${selectedType === "bug" ? "grid-cols-2" : "grid-cols-1"}  gap-4`}
+              className={`grid w-full ${selectedType === 'bug' ? 'grid-cols-2' : 'grid-cols-1'}  gap-4`}
             >
               <div className="w-full">
                 <Label htmlFor="prompt">Prompt</Label>
@@ -154,15 +151,15 @@ const Index = () => {
                   value={prompt}
                   onChange={(e) => {
                     setPrompt(e.target.value);
-                    if (error) setError("");
+                    if (error) setError('');
                   }}
                   placeholder="Enter your prompt"
-                  className={`${selectedType === "bug" ? "h-[400px]" : "h-[300px]"} w-full rounded-md border ${error ? "border-red-500" : ""} p-2 outline-none`}
+                  className={`${selectedType === 'bug' ? 'h-[400px]' : 'h-[300px]'} w-full rounded-md border ${error ? 'border-red-500' : ''} p-2 outline-none`}
                 />
                 {error && <p className="mt-1 text-sm text-red-500">{error}</p>}
               </div>
 
-              {selectedType === "bug" && (
+              {selectedType === 'bug' && (
                 <div>
                   <Label htmlFor="picture">Upload your picture</Label>
                   <div className="flex h-[400px] w-full flex-col justify-between space-y-4 rounded-md border p-2">
@@ -209,7 +206,7 @@ const Index = () => {
                 onClick={handleSubmit}
                 disabled={isLoading || !prompt.trim()}
               >
-                {isLoading ? "Sending..." : "Submit"}
+                {isLoading ? 'Sending...' : 'Submit'}
               </Button>
             </div>
           </TabsContent>
