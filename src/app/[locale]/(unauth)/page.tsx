@@ -4,6 +4,7 @@ import { API_URL } from 'config';
 import Image from 'next/image';
 import { useState } from 'react';
 
+import ResponseList from '@/components/Feedback/ResponseList';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -113,7 +114,10 @@ const Index = () => {
     <section className="flex min-h-screen items-center justify-center">
       <div className="my-10 w-[90vw] space-y-4 rounded-lg border bg-white p-4 shadow-xl 3xl:w-1/2">
         <h1 className="text-center text-2xl">This is from home page</h1>
-        <Tabs defaultValue="submit-feedback" className="w-full space-y-6">
+        <Tabs
+          defaultValue="submit-feedback"
+          className="min-h-[600px] w-full space-y-6"
+        >
           <TabsList className="h-10 w-full">
             <TabsTrigger value="submit-feedback" className="h-9 w-1/2 text-lg">
               Submit your feedback
@@ -210,8 +214,9 @@ const Index = () => {
               </Button>
             </div>
           </TabsContent>
+
           <TabsContent value="responseList">
-            Change your password here.
+            <ResponseList />
           </TabsContent>
         </Tabs>
       </div>
