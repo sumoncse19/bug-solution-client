@@ -1,5 +1,6 @@
 /* eslint-disable no-underscore-dangle */
 import { API_URL } from 'config';
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { IoReload } from 'react-icons/io5';
 
@@ -40,7 +41,22 @@ const ResponseList = () => {
           setCurrentPage(responseJson.data.page);
         }
       } else if (type === 'image_solution') {
-        // Add image solution fetch logic here
+        const response = await fetch(
+          `${API_URL}/api/v1/ask-query/gemini-image?page=${currentPage}`,
+          {
+            method: 'GET',
+          },
+        );
+
+        const responseJson = await response.json();
+        if (responseJson.success) {
+          setApiResponse(responseJson.data.allImageSolution);
+          const totalPagesCount = Math.ceil(
+            responseJson.data.total / responseJson.data.limit,
+          );
+          setTotalPages(totalPagesCount);
+          setCurrentPage(responseJson.data.page);
+        }
       }
     } catch (error) {
       console.error('Error fetching data:', error);
@@ -62,6 +78,12 @@ const ResponseList = () => {
     if (newPage >= 1 && newPage <= totalPages) {
       setCurrentPage(newPage);
     }
+  };
+
+  const bufferToBase64 = (buffer: any) => {
+    if (!buffer) return '';
+    const binary = Buffer.from(buffer.data).toString('base64');
+    return `data:${buffer.type};base64,${binary}`;
   };
 
   return (
@@ -105,6 +127,17 @@ const ResponseList = () => {
                   <strong>{index + 1}. Question:</strong>{' '}
                   <span className="italic">{response.prompt}</span>
                 </p>
+                {selectedType === 'image_solution' && response.imageFile && (
+                  <div className="mt-4 h-[500px] w-full">
+                    <Image
+                      src={bufferToBase64(response.imageFile.buffer)}
+                      alt={response.prompt}
+                      width={700}
+                      height={500}
+                      className="size-full rounded-md object-contain"
+                    />
+                  </div>
+                )}
                 <p className="mt-1">
                   <strong>Answer:</strong> {response.solution}
                 </p>
